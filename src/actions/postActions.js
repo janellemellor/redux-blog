@@ -1,4 +1,3 @@
-// * BONUS: you can update a post by passing an id and new body
 export const ADD_POST = 'ADD_POST';
 
 export const addPost = post => ({
@@ -11,5 +10,15 @@ export const DELETE_POST = 'DELETE_POST';
 export const deletePost = index => ({
   type: DELETE_POST,
   payload: index
+});
+
+export const UPDATE_POST = 'UPDATE_POST';
+
+export const updatePost = (id, post) => ({
+  type: UPDATE_POST, 
+  payload: {
+    id, 
+    post
+}
 });
 
