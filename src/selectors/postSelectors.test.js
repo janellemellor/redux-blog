@@ -1,4 +1,4 @@
-import { getPosts } from '../selectors/postSelectors';
+import { getPosts, getPostByIndex } from '../selectors/postSelectors';
 // * get a post by index
 // * STRETCH: create `src/selectors/commentSelectors.js`
 // * get all comments by post
