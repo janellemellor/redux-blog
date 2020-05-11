@@ -2,3 +2,9 @@
 // * you can create a post
 // * you can delete a post
 // * BONUS: you can update a post by passing an id and new body
+export const ADD_POST = 'ADD_POST';
+
+export const addPost = post => ({
+  type: ADD_POST,
+  payload: post
+});
