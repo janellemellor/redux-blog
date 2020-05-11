@@ -54,7 +54,4 @@ describe('post reducer', () => {
       }  
     ]);
   });
-
-
-
 });
