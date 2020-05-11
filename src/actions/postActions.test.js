@@ -14,7 +14,17 @@ describe('post actions', () => {
         body: 'This is my post about why blogs are better than pogs'  
       }
     });
-  });  
+  });
+  
+  it('it deletes a post action', () => {
+    const action = deletePost(4);
+
+    expect(action).toEqual({
+      type: DELETE_POST,
+      payload: 4
+    });
+  });
+  
     
 });
 
