@@ -1,3 +1,4 @@
+import { getPosts } from '../selectors/postSelectors';
 // * get all posts
 // * get a post by index
 // * STRETCH: create `src/selectors/commentSelectors.js`
