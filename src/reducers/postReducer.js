@@ -1,6 +1,5 @@
 import { ADD_POST, DELETE_POST } from '../actions/postActions';
 
-//   * handle delete a post
 //   * BONUS: handle update a post by index
 
 const initialState = [];

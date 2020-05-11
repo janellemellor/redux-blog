@@ -1,4 +1,4 @@
-import { addPost, deletePost } from '../actions/postActions';
+import { addPost, deletePost, updatePost } from '../actions/postActions';
 import reducer from './postReducer';
 
 describe('post reducer', () => {
@@ -18,7 +18,7 @@ describe('post reducer', () => {
   });  
 
 
-  it('handles the delete post post action', () => {
+  it('handles the delete post action', () => {
     const state = [
       {
         title: 'Blogs are better than pogs',
@@ -30,6 +30,31 @@ describe('post reducer', () => {
     const newState = reducer(state, action);
 
     expect(newState).toEqual([]);
-  });  
+  });
+
+
+  it('handles the update post action', () => {
+    const state = [
+      {
+        title: 'Blogs are better than pogs',
+        body: 'This is my post about why blogs are better than pogs'  
+      }
+    ];
+
+    const action = updatePost(0, {
+        title: 'Blogs are better than pogs',
+        body: 'Actually, now that I think about it, pogs are better than blogs' 
+    });
+
+    const newState = reducer(state, action);
+    expect(newState).toEqual([
+      {
+        title: 'Blogs are better than pogs',
+        body: 'Actually, now that I think about it, pogs are better than blogs'  
+      }  
+    ]);
+  });
+
+
 
 });
