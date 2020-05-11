@@ -1,3 +1,5 @@
+import { ADD_POST } from '../actions/postActions';
+
 //   * store an array of posts
 //   * handle create a post
 //   * handle delete a post
