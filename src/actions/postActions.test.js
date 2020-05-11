@@ -25,7 +25,7 @@ describe('post actions', () => {
     });
   });
 
-  it('updates a post by id', () => {
+  it('updates a post by index', () => {
     const action = updatePost(9, {
         title: 'Blogs are better than pogs',
         body: 'Actually, now that I think about it, pogs are better than blogs' 
@@ -34,7 +34,7 @@ describe('post actions', () => {
     expect(action).toEqual({
       type: UPDATE_POST, 
       payload: {
-        id: 9,
+        index: 9,
         post: {
             title: 'Blogs are better than pogs',
             body: 'Actually, now that I think about it, pogs are better than blogs' 

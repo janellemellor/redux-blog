@@ -14,10 +14,10 @@ export const deletePost = index => ({
 
 export const UPDATE_POST = 'UPDATE_POST';
 
-export const updatePost = (id, post) => ({
+export const updatePost = (index, post) => ({
   type: UPDATE_POST, 
   payload: {
-    id, 
+    index, 
     post
 }
 });
