@@ -8,7 +8,7 @@ describe('comment selectors', () => {
           comments: ['Yes! 100% agree!','Popcorn and beer is all I need']
           }
     ];
-    const comments = getCommentsByPost(state, )
+    const comments = getCommentsByPost(state, 2)
     expect(comments).toEqual({
         comments: ['Yes! 100% agree!','Popcorn and beer is all I need']
     });
