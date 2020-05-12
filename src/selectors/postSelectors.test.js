@@ -1,7 +1,4 @@
 import { getPosts, getPostByIndex } from '../selectors/postSelectors';
-// * get a post by index
-// * STRETCH: create `src/selectors/commentSelectors.js`
-// * get all comments by post
 
 describe('post selectors', () => {
   it('gets all posts', () => {
@@ -48,8 +45,6 @@ describe('post selectors', () => {
         body: 'is an acceptable dinner choice any night of the week'  
     });
   });
-  
-  
 });
 
 
